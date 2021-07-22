@@ -7,6 +7,16 @@ Initial macOS Support|macOS 10.12, Sierra.
 - Opencore version: 0.7.1
 - Release date: 22/07/2021
 
+# Basic Steps
+
+1. [Download](https://github.com/luchina-gabriel/BASE-EFI-INTEL-DESKTOP-7THGEN-KABY-LAKE/releases) the latest release;
+2. Include the necessary kext (for ethernet, audio, etc);
+3. Include the necessary ACPI patches (.aml);
+4. Review the special notes;
+5. Generate and complete your SMBIOS infos;
+6. Adjust your BIOS;
+7. Install macOS and enjoy :)
+
 # Features
 - [x] Very light, very clean, basic files for your Hackintosh.
 - [x] Made with latest OpenCore versions.
