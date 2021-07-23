@@ -10,7 +10,7 @@ Initial macOS Support|macOS 10.12, Sierra.
 # Basic Steps
 
 1. [Download](https://github.com/luchina-gabriel/BASE-EFI-INTEL-DESKTOP-7THGEN-KABY-LAKE/releases) the latest release;
-2. Include the necessary kext (for ethernet, audio, etc);
+2. Includes additional kexts (for ethernet, audio, etc);
 3. Include the necessary ACPI patches (.aml);
 4. Review the special notes;
 5. Generate and complete your SMBIOS infos;
