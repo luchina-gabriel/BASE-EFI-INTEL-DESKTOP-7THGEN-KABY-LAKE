@@ -1,5 +1,16 @@
 OpenCore Changelog
 ==================
+#### v0.7.2
+- Fixed OSBundleLibraries/OSBundleLibaries64 handling
+- Added `GraphicsInputMirroring` to fix lost keystrokes in some non-Apple graphical UEFI apps
+- Added support for stack canaries (security cookies / stack guards)
+- Fixed unintialised memory access in AudioDxe causing audio playback failure
+- Changed `Default` Apple Secure Boot model to `x86legacy` for better security and compatibility
+- Increased default APFS `MinDate` and `MinVersion` to macOS Big Sur for better security
+- Updated builtin firmware versions for SMBIOS and the rest
+- Improved SSDT-PNLF compatibility with Windows and newer graphics
+- Fixed CLANGPDB OpenCore builds by shortening OC magic
+
 #### v0.7.1
 - Added `SyncTableIds` quirk to sync modified table OEM identifiers
 - Added CPU Info (MSRs) dumping to `SysReport`
@@ -19,6 +30,7 @@ OpenCore Changelog
 - Added `TpmInfo` tool to DEBUG TPM status
 - Fixed incorrect OpenCanopy initial display when default entry beyond right of screen
 - Fixed `ProvideCurrentCpuInfo` MSR patch on macOS 12
+- Fixed `AppleXcpmForceBoost` patch on macOS 12
 
 #### v0.7.0
 - Fixed NVRAM reset on firmware with write-protected `BootOptionSupport`
