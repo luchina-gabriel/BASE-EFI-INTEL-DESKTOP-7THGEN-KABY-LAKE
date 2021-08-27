@@ -10,10 +10,10 @@ Initial macOS Support|macOS 10.12, Sierra.
 # Basic Steps
 
 1. [Download](https://github.com/luchina-gabriel/BASE-EFI-INTEL-DESKTOP-7THGEN-KABY-LAKE/releases) the latest release;
-2. Includes additional kexts (for ethernet, audio, etc);
-3. Include the necessary ACPI patches (.aml);
+2. Includes **additional** kexts (for ethernet, audio, etc);
+3. Include the **necessary** ACPI patches (.aml);
 4. Review the special notes;
-5. Generate and complete your SMBIOS infos;
+5. Generate and complete your SMBIOS infos - **ALWAYS**;
 6. Adjust your BIOS;
 7. Install macOS and enjoy :)
 
@@ -51,6 +51,7 @@ Kext|Description
 [AtherosE2200Ethernet.kext](https://github.com/Mieze/AtherosE2200Ethernet/releases)|Required for Atheros and Killer NICs.<br>**Note**: Atheros Killer E2500 models are actually Realtek based, for these systems please use RealtekRTL8111 instead.
 [RealtekRTL8111.kext](https://github.com/Mieze/RTL8111_driver_for_OS_X/releases)|For Realtek's Gigabit Ethernet.<br>Sometimes the latest version of the kext might not work properly with your Ethernet. If you see this issue, try older versions.
 [LucyRTL8125Ethernet.kext](https://www.insanelymac.com/forum/files/file/1004-lucyrtl8125ethernet/)|For Realtek's 2.5Gb Ethernet.
+[SmallTreeIntel82576.kext](https://github.com/khronokernel/SmallTree-I211-AT-patch/releases)| Required for I211 NICs, based off of the SmallTree kext but patched to support I211.<br>Required for most AMD boards running Intel NICs.
 
 ### WiFi and Bluetooth
 Kext|Description
