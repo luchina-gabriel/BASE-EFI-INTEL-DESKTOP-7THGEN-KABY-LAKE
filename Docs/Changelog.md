@@ -1,5 +1,15 @@
 OpenCore Changelog
 ==================
+#### v0.7.5
+- Revised OpenLinuxBoot documentation
+- Supported Linux ostree boot layout
+- Fixed external drive icons for Boot Entry Protocol
+- Added GPU Resize BAR quirks to reduce BARs on per-OS basis
+- Fixed OpenLinuxBoot hang bug after correct detection of some distros
+- Added DMG signature check during download, thx @jspraul and @zhangyoufu
+- Updated builtin firmware versions for SMBIOS and the rest
+- Updated recovery downloading commands to include macOS 11 and 12
+
 #### v0.7.4
 - Fixed Linux kernel sort order
 - Added Linux detection optional log detail
