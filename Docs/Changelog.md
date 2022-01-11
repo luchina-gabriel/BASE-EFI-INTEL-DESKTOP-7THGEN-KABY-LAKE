@@ -1,5 +1,26 @@
 OpenCore Changelog
 ==================
+#### v0.7.7
+- Fixed rare crash caused by register corruption in the entry point
+- Added `ProvideCurrentCpuInfo` support for Intel Alder Lake
+- Fixed typo in `Cpuid1Data` recommendations for Intel Rocket Lake and newer
+- Updated builtin firmware versions for SMBIOS and the rest
+- Updated underlying EDK II package to edk2-stable202111
+- Resolved crashes in QEMU with AudioDxe
+- Added AudioDxe settings caching (avoids non-needed setup delays)
+- Added DisconnectHda quirk to allow UEFI sound on Apple hardware and others
+- Added workarounds for bugs in QEMU `intel-hda` driver to allow UEFI sound in QEMU
+- Implemented multi-channel (e.g. bass+main speaker; speakers+headphones) UEFI sound with `AudioOutMask`
+- Fixed AudioDxe startup stalls when Nvidia HDA audio is present
+- Resolved AudioDxe disabling sound in Windows on some firmware
+- Added pointer polling period tuning in the builtin AppleEvent implementation
+- Added pointer device list tuning in the builtin AppleEvent implementation
+- Added VREF handling to support UEFI sound on more Apple hardware
+- Updated audio output channel detection to support UEFI sound on more Apple hardware
+- Added manual GPIO config (use `--gpio-setup` AudioDxe driver argument for UEFI sound on Apple hardware)
+- Switched UEFI audio levels to decibel gain to allow accurate matching of saved macOS volume levels
+- Separated settings for minimum audio assist volume and minimum audible volume
+
 #### v0.7.6
 - Fixed stack canary support when compiling with GCC
 - Added automatic scaling factor detection
