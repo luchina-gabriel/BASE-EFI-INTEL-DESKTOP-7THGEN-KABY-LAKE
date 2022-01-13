@@ -191,3 +191,6 @@ nvda_drv_vrl=1|Used for enabling Nvidia's Web Drivers on Maxwell and Pascal card
 https://dortania.github.io/OpenCore-Install-Guide/config.plist/kaby-lake.html
 <br>
 https://dortania.github.io/Getting-Started-With-ACPI/
+
+## Discord - Universo Hackintosh
+- [Access Discord](https://discord.universohackintosh.com.br)
