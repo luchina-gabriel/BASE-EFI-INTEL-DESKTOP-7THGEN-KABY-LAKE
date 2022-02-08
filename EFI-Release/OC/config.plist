@@ -4,6 +4,8 @@
 <dict>
 	<key># BASE EFI INTEL 7th - KABY LAKE - RELEASE Version</key>
 	<string></string>
+	<key># DISCORD: https://discord.universohackintosh.com</key>
+	<string></string>
 	<key># BY: https://luchina.com.br</key>
 	<string></string>
 	<key>ACPI</key>
@@ -372,6 +374,8 @@
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
+				<key>ForceDisplayRotationInEFI</key>
+				<integer>0</integer>
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
@@ -382,15 +386,12 @@
 				<string>en-US:0</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
-				<key>ForceDisplayRotationInEFI</key>
-				<integer>0</integer>
 			</dict>
 		</dict>
 		<key>Delete</key>
 		<dict>
 			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
 			<array>
-				<string>UIScale</string>
 				<string>DefaultBackgroundColor</string>
 			</array>
 			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
