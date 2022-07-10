@@ -4,8 +4,8 @@ Note|Description
 :----|:----
 Initial macOS Support|macOS 10.12, Sierra.
 
-- Opencore version: 0.8.1
-- Release date: 06/06/2022
+- Opencore version: 0.8.2
+- Release date: 04/07/2022
 
 # Basic Steps
 
