@@ -104,6 +104,8 @@
 		<key>Add</key>
 		<array>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>Lilu.kext</string>
 				<key>Comment</key>
@@ -112,8 +114,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/Lilu</string>
-				<key>Arch</key>
-				<string>Any</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -122,6 +122,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>VirtualSMC.kext</string>
 				<key>Comment</key>
@@ -130,8 +132,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VirtualSMC</string>
-				<key>Arch</key>
-				<string>Any</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -140,6 +140,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>WhateverGreen.kext</string>
 				<key>Comment</key>
@@ -148,8 +150,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/WhateverGreen</string>
-				<key>Arch</key>
-				<string>Any</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -158,6 +158,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>SMCProcessor.kext</string>
 				<key>Comment</key>
@@ -166,8 +168,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/SMCProcessor</string>
-				<key>Arch</key>
-				<string>Any</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -176,6 +176,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>SMCSuperIO.kext</string>
 				<key>Comment</key>
@@ -184,8 +186,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/SMCSuperIO</string>
-				<key>Arch</key>
-				<string>Any</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -413,8 +413,6 @@
 				<string>prev-lang:kbd</string>
 			</array>
 		</dict>
-		<key>LegacyEnable</key>
-		<false/>
 		<key>LegacyOverwrite</key>
 		<false/>
 		<key>LegacySchema</key>
@@ -558,43 +556,51 @@
 		<key>Drivers</key>
 		<array>
 			<dict>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>AudioDxe.efi</string>
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
 				<string>AudioDxe.efi</string>
-			</dict>
-			<dict>
 				<key>Enabled</key>
 				<true/>
+				<key>LoadEarly</key>
+				<false/>
 				<key>Path</key>
-				<string>HfsPlus.efi</string>
+				<string>AudioDxe.efi</string>
+			</dict>
+			<dict>
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
 				<string>HfsPlus.efi</string>
-			</dict>
-			<dict>
 				<key>Enabled</key>
 				<true/>
+				<key>LoadEarly</key>
+				<false/>
 				<key>Path</key>
-				<string>OpenRuntime.efi</string>
+				<string>HfsPlus.efi</string>
+			</dict>
+			<dict>
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
 				<string>OpenRuntime.efi</string>
-			</dict>
-			<dict>
 				<key>Enabled</key>
 				<true/>
+				<key>LoadEarly</key>
+				<false/>
 				<key>Path</key>
+				<string>OpenRuntime.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
 				<string>ResetNvramEntry.efi</string>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
+				<key>Enabled</key>
+				<true/>
+				<key>LoadEarly</key>
+				<false/>
+				<key>Path</key>
 				<string>ResetNvramEntry.efi</string>
 			</dict>
 		</array>
